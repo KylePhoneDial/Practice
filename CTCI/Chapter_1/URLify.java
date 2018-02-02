@@ -1,4 +1,5 @@
 public class URLify {
+	
 	void replaceSpaces(char[] string, int length) {
 		int numSpaces = 0, index;
 
