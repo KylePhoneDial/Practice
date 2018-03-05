@@ -8,6 +8,7 @@ class stack {
 		stack();
 		T pop();
 		void push(T data);
+		T peek();
 		bool isEmpty();
 
 	private:
@@ -38,6 +39,11 @@ void stack<T>::push(T data) {
 	newNode->data = data;
 	newNode->next = first;
 	first = newNode;
+}
+
+template <class T>
+T stack<T>::peek() {
+	return first->data;
 }
 
 template <class T>
